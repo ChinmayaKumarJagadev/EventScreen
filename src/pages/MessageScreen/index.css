@@ -1,0 +1,7 @@
+.mainMessage {
+    min-height: 100vh;
+    padding: 0 20px;
+    background-image: url('../../assets/images/EventHome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
