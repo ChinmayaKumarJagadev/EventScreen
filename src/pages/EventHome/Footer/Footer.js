@@ -19,7 +19,7 @@ const Footer = () => {
                 <div className="toaster">
                     <img src={IMAGES.CrossIcon} alt="no_image_found" className="CrossIcon" onClick={() => closeIcon(setShowToaster)} />
                     <p className="toastertext"><b>You have responded No</b></p>
-                    <p className="changetext"><b>Change</b></p>
+                    <p className="changetext" onClick={() => closeIcon(setShowToaster)} ><b>Change</b></p>
                 </div>
             ) : (<div className="buttonContainer mt-4">
                 <p className="button"><b>Maybe</b></p>
