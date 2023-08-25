@@ -1,0 +1,132 @@
+.conversationCenter {
+    padding: 0 00px;
+}
+
+.conversationText {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    padding: 5px 35px 0 20px;
+    margin: 0;
+    text-align: left;
+    font-family: "Inter";
+}
+
+.ConversationTextContainter {
+    border-radius: 0px 18px 18px 18px;
+    background: rgba(241, 241, 241, 0.30);
+    backdrop-filter: blur(17px);
+    flex-grow: 1;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+.dateText {
+    color: #FFF;
+    font-size: 8px;
+    text-align: right;
+    line-height: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-family: "Inter";
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.right .ConversationTextContainer {
+    text-align: left;
+    width: 250px;
+    border-radius: 18px 0px 18px 18px;
+    background: rgba(20, 123, 255, 0.40);
+    backdrop-filter: blur(17px);
+    margin-bottom: 10px;
+}
+
+.rightImageIcon {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.dateAndImageContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tickIcon {
+    margin: -10px 10px 0 0;
+}
+
+.fixedInput {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.conversationCenter {
+    position: relative;
+    overflow: hidden;
+}
+
+.messagesContainer {
+    overflow-y: scroll;
+    max-height: calc(100vh - 150px);
+    margin-bottom: 40px;
+    padding-bottom: 15px;}
+
+.fixedInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #F7F7F7;;
+    background-color: #F7F7F7;;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 46px;
+    border: none;
+    font-family: "AvenirNextLTPro-Regular";
+}
+.InputBar::placeholder {
+    font-family: "AvenirNextLTPro-Regular";
+}
+
+.messagesContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.InputBar {
+    color: #000;
+    font-family: "AvenirNextLTPro-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.304px;
+    border: none;
+    outline: none;
+    background-color: #F7F7F7;
+    float: left;
+    margin-left: 10px;
+}
+.SmileyIcon{
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+.SendIcon{
+    width: 24px;
+    height: 24px;
+    float: right;
+    margin-right: 10px;
+}

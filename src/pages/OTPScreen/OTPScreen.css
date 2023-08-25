@@ -6,32 +6,31 @@
 .otp-box {
     border-radius: 10px;
     background: #F7F7F7;
-    margin: 0 10px;
+    margin: 0 7px;
     line-height: 3rem;
     font-size: 18px;
     font-weight: bold;
-    width: 65px;
+    width: 68px;
     height: 46px;
-    padding: 0 25px;
+    text-align: center;
     outline: none;
     border: none;
+    font-family: "AvenirNextLTPro-Regular";
 }
 
 .otp {
     color: #000;
-    /* font-family: Avenir Next LT Pro; */
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     text-align: left;
-    padding-left: 10px;
     margin-bottom: 10px;
+    font-family: "AvenirNextLTPro-Regular";
+    font-weight: bold;
 }
 
 .otpTitle {
     color: #000;
-    font-family: Avenir Next LT Pro;
+    font-family: "AvenirNextLTPro-Regular";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -39,43 +38,28 @@
     text-align: left;
     margin-top: 10px;
     margin-bottom: 20px;
-    padding: 0 10px;
+}
+
+.optContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-right {
+    text-align: right;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-family: "AvenirNextLTPro-Regular";
 }
 
 .resendOTP {
     color: #000;
-    /* font-family: Avenir Next LT Pro; */
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-align: right;
-    margin-right: 10px;
-    margin-bottom: 10px;
     cursor: pointer;
-}
-@media (min-width: 378px) and (max-width: 422px) {
-    .otp {
-        color: #000;
-        /* font-family: Avenir Next LT Pro; */
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        text-align: left;
-        padding-left: 20px;
-        margin-bottom: 10px;
-    }
-    .resendOTP {
-        color: #000;
-        /* font-family: Avenir Next LT Pro; */
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        text-align: right;
-        margin-right: 15px;
-        margin-bottom: 10px;
-        cursor: pointer;
-    }
+    font-weight: bold;
+    font-family: "AvenirNextLTPro-Regular";
 }

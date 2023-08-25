@@ -17,26 +17,18 @@ import MessageBackIcon from '../assets/images/messageBack.png';
 import MessageIcon1 from '../assets/images/messageIcon1.png';
 import MessageIcon2 from '../assets/images/messageIcon2.png';
 import MessageIcon3 from '../assets/images/messageIcon3.png';
-
+import TickIcon from '../assets/images/tick.png';
+import EmojiIcon from '../assets/images/emoji.png'
+import SendIcon from '../assets/images/send.png';
+import SouravIcon from '../assets/images/sourav.png';
+import AmitIcon from '../assets/images/amit.png';
+import BrahminiIcon from '../assets/images/brahmini.png';
+import RajeshIcon from '../assets/images/rajesh.png';
 
 export const IMAGES = {
-    BackArrow: BackArrow,
-    DownloadIcon: DownloadIcon,
-    ShareIcon: ShareIcon,
-    DateIcon: DateIcon,
-    ClockIcon: ClockIcon,
-    CrossIcon: CrossIcon,
-    EventHomeImage: EventHomeImage,
-    BackArrowInfo: BackArrowInfo,
-    FaceBookIcon: FaceBookIcon,
-    InstaIcon: InstaIcon,
-    TwitterIcon: TwitterIcon,
-    GoogleIcon: GoogleIcon,
-    LinkedinIcon: LinkedinIcon,
-    MemberIcon: MemberIcon,
-    InfoIcon: InfoIcon,
-    MessageBackIcon: MessageBackIcon,
-    MessageIcon1: MessageIcon1,
-    MessageIcon2: MessageIcon2,
-    MessageIcon3: MessageIcon3
+    BackArrow, DownloadIcon, ShareIcon, DateIcon, ClockIcon,
+    CrossIcon, EventHomeImage, BackArrowInfo, FaceBookIcon,
+    InstaIcon, TwitterIcon, GoogleIcon, LinkedinIcon, MemberIcon,
+    InfoIcon, MessageBackIcon, MessageIcon1, MessageIcon2,
+    MessageIcon3, TickIcon, EmojiIcon, SendIcon, SouravIcon, BrahminiIcon, AmitIcon, RajeshIcon
 };

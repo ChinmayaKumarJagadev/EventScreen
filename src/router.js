@@ -4,6 +4,7 @@ import { routers } from './constants/routes';
 import InfoScreen from './pages/InfoScreen/index'
 import OTPScreen from './pages/OTPScreen/OTPScreen';
 import MessageScreen from './pages/MessageScreen/index';
+import MemberScreen from './pages/Members/index';
 
 const RouterCompoent = () => {
   return (
@@ -14,6 +15,7 @@ const RouterCompoent = () => {
         <Route path={routers.INFO} element={<InfoScreen />} />
         <Route path={routers.OTP} element={<OTPScreen />} />
         <Route path={routers.MESSAGE} element={<MessageScreen />} />
+        <Route path={routers.MEMBER} element={<MemberScreen />} />
       </Routes>
     </Router>
   );

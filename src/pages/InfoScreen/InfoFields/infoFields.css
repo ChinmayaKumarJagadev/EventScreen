@@ -18,8 +18,9 @@
     color: #000;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     line-height: normal;
+    font-family: "AvenirNextLTPro-Regular";
 }
 
 .form-input {
@@ -31,11 +32,12 @@
     transition: border-color 0.2s;
     box-shadow: none;
     outline: none;
+    font-family: "AvenirNextLTPro-Regular";
 }
 
 .form-input::placeholder {
     color: #848484;
-    font-family: Avenir Next LT Pro;
+    font-family: "AvenirNextLTPro-Regular";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -70,7 +72,7 @@
     flex: 1;
     text-align: left;
     color: #848484;
-    font-family: Avenir Next LT Pro;
+    font-family: "AvenirNextLTPro-Regular";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
