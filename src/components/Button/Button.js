@@ -9,24 +9,18 @@ const ButtonContainer = () => {
     const buttonText = location.pathname === routers.INFO ? "Reply" : "Send Reply";
 
     const buttonClicked = () => {
-        if (location.pathname === routers.INFO) {
-            replyButtonClicked();
-        } else if (location.pathname === routers.OTP) {
-            sendReplyButtonClicked();
-        }
-    }
-
-    const replyButtonClicked = () => {
-        history(routers.OTP);
-    }
-
-    const sendReplyButtonClicked = () => {
-        history(routers.MESSAGE);
+        history(location.pathname === routers.INFO ? routers.OTP : routers.MESSAGE);
     }
 
     return (
-        <div className="buttonComponent">
-            <button type="submit" className={location.pathname === routers.INFO ? "buttonMain": 'otpButtonReply' } onClick={buttonClicked}>{buttonText}</button>
+        <div>
+            {location.pathname === routers.INFO ? (
+                <button type="submit" className="buttonMain" onClick={buttonClicked}>{buttonText}</button>
+            ) : (
+                <div className="buttonComponent">
+                    <button type="submit" className="otpButtonReply" onClick={buttonClicked}>{buttonText}</button>
+                </div>
+            )}
         </div>
     );
 }

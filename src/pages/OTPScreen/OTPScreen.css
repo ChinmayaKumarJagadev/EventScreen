@@ -6,11 +6,10 @@
 .otp-box {
     border-radius: 10px;
     background: #F7F7F7;
-    margin: 0 7px;
     line-height: 3rem;
     font-size: 18px;
     font-weight: bold;
-    width: 68px;
+    width: calc((100% - 60px) / 4);
     height: 46px;
     text-align: center;
     outline: none;
@@ -42,8 +41,7 @@
 
 .optContainer {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 

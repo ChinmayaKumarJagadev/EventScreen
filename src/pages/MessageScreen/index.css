@@ -15,6 +15,7 @@
 .imageSection {
     display: flex;
     margin-top: 20px;
+    gap: 10px;
 }
 
 .messageTitle {
@@ -28,5 +29,6 @@
 .messageHeaderIcons{
     width: 24px;
     height: 24px;
-    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
 }

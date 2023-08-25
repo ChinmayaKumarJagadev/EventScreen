@@ -24,11 +24,16 @@ import SouravIcon from '../assets/images/sourav.png';
 import AmitIcon from '../assets/images/amit.png';
 import BrahminiIcon from '../assets/images/brahmini.png';
 import RajeshIcon from '../assets/images/rajesh.png';
+import NilimaIcon from '../assets/images/nilima.png';
+import SanjayIcon from '../assets/images/sanjay.png';
+import TristaIcon from '../assets/images/trista.png';
+import MapIcon from '../assets/images/mapIcon.png';
 
 export const IMAGES = {
     BackArrow, DownloadIcon, ShareIcon, DateIcon, ClockIcon,
     CrossIcon, EventHomeImage, BackArrowInfo, FaceBookIcon,
     InstaIcon, TwitterIcon, GoogleIcon, LinkedinIcon, MemberIcon,
     InfoIcon, MessageBackIcon, MessageIcon1, MessageIcon2,
-    MessageIcon3, TickIcon, EmojiIcon, SendIcon, SouravIcon, BrahminiIcon, AmitIcon, RajeshIcon
+    MessageIcon3, TickIcon, EmojiIcon, SendIcon, SouravIcon, BrahminiIcon, AmitIcon, RajeshIcon,
+    NilimaIcon, SanjayIcon, TristaIcon, MapIcon
 };

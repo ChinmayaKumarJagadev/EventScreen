@@ -5,6 +5,7 @@ import InfoScreen from './pages/InfoScreen/index'
 import OTPScreen from './pages/OTPScreen/OTPScreen';
 import MessageScreen from './pages/MessageScreen/index';
 import MemberScreen from './pages/Members/index';
+import MemberInfoScreen from './pages/MembersInfo/index'
 
 const RouterCompoent = () => {
   return (
@@ -16,6 +17,7 @@ const RouterCompoent = () => {
         <Route path={routers.OTP} element={<OTPScreen />} />
         <Route path={routers.MESSAGE} element={<MessageScreen />} />
         <Route path={routers.MEMBER} element={<MemberScreen />} />
+        <Route path={routers.MEMBERINFO} element={<MemberInfoScreen />} />
       </Routes>
     </Router>
   );

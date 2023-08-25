@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import TopHeader from "../../components/TopHeader/TopHeader";
 import "./OTPScreen.css";
 import ButtonContainer from "../../components/Button/Button";
+import { handleOtpChange } from './OTPFunction'
 
 const OTPScreen = () => {
     const [otpDigits, setOtpDigits] = useState(['4', '6', '3', '1']);
 
-    const handleOtpChange = (index, value) => {
-        if (!isNaN(value) && value.length <= 1) {
-            const updatedOtpDigits = [...otpDigits];
-            updatedOtpDigits[index] = value;
-            setOtpDigits(updatedOtpDigits);
-        }
+    const handleChange = (index, value) => {
+        handleOtpChange(otpDigits, setOtpDigits, index, value);
     };
 
     return (
@@ -33,7 +30,7 @@ const OTPScreen = () => {
                             inputMode="numeric"
                             maxLength="1"
                             value={digit}
-                            onChange={(e) => handleOtpChange(index, e.target.value)}
+                            onChange={(e) => handleChange(index, e.target.value)}
                         />
                     ))}
                 </div>

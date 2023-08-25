@@ -6,7 +6,7 @@ import { routers } from "../../constants/routes";
 
 const TopHeader = () => {
     const location = useLocation();
-    const pageTitle = location.pathname === routers.OTP ? "Enter OTP" : location.pathname === routers.INFO ? "Your information" : location.pathname === routers.MESSAGE ? "Future Forward Season 1 Epi...": location.pathname === routers.MEMBER ? 'Members' : '';
+    const pageTitle = location.pathname === routers.OTP ? "Enter OTP" : location.pathname === routers.INFO ? "Your information" : location.pathname === routers.MESSAGE ? "Future Forward Season 1 Epi..." : location.pathname === routers.MEMBER ? 'Members' : location.pathname === routers.MEMBERINFO ? 'Info' : '';
 
     const goBack = () => {
         window.history.back();

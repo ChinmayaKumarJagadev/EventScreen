@@ -1,3 +1,46 @@
-.membersContainer{
+.membersContainer {
+    margin-bottom: 20px;
     padding: 0 20px;
+}
+
+.memberDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 50px); 
+}
+
+.memberName {
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.304px;
+}
+
+.AcceptedStatusText {
+    margin-top: 10px;
+    color: #11992F;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-left: auto;
+    letter-spacing: -0.209px;
+}
+.MaybeStatusText{
+    margin-top: 10px;
+    color: #E3A11F;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-left: auto;
+    letter-spacing: -0.209px;
 }
