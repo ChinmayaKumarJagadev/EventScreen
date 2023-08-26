@@ -1,0 +1,18 @@
+.event-home-container {
+    position: relative;
+
+    .background-image {
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        background-size: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+}

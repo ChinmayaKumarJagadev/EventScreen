@@ -1,0 +1,58 @@
+$font-family: "AvenirNextLTPro-Regular";
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: bold;
+
+$font-size-normal: 16px;
+$line-height-normal: normal;
+$line-height-22px: 22px;
+
+$color-text: #000;
+
+.MemberInfoContainer {
+    padding: 0 20px;
+
+    .memberInfoDescription {
+        float: left;
+        margin-top: 20px;
+        text-align: left;
+
+        .locationText {
+            color: $color-text;
+            font-family: $font-family;
+            font-size: $font-size-normal;
+            font-style: normal;
+            font-weight: $font-weight-medium;
+            line-height: $line-height-normal;
+            margin-left: 10px;
+        }
+
+        .descTitle {
+            color: $color-text;
+            font-family: $font-family;
+            font-size: $font-size-normal;
+            font-style: normal;
+            font-weight: $font-weight-bold;
+            line-height: $line-height-normal;
+            margin-top: 30px;
+        }
+
+        .description {
+            overflow: hidden;
+            color: $color-text;
+            text-overflow: ellipsis;
+            white-space: pre-line;
+            font-family: $font-family;
+            font-size: $font-size-normal;
+            font-style: normal;
+            font-weight: $font-weight-normal;
+            line-height: $line-height-22px;
+            margin-top: 10px;
+        }
+    }
+
+    .mapIcon {
+        width: 24px;
+        height: 24px;
+    }
+}

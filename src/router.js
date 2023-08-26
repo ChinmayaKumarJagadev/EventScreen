@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import EventHome from './pages/EventHome/EventHome';
 import { routers } from './constants/routes';
-import InfoScreen from './pages/InfoScreen/index'
+import InfoScreen from './pages/InfoScreen/InfoScreen'
 import OTPScreen from './pages/OTPScreen/OTPScreen';
-import MessageScreen from './pages/MessageScreen/index';
-import MemberScreen from './pages/Members/index';
-import MemberInfoScreen from './pages/MembersInfo/index'
+import MessageScreen from './pages/MessageScreen/MessageScreen';
+import MemberScreen from './pages/MembersScreen/MembersScreen';
+import MemberInfoScreen from './pages/MembersInfo/MembersInfo'
 
 const RouterCompoent = () => {
   return (

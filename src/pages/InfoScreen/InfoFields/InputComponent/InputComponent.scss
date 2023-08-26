@@ -1,0 +1,95 @@
+$primary-color: #F7F7F7;
+$secondary-color: #848484;
+$accent-color: #000;
+$highlight-color: #000;
+$font-family: "AvenirNextLTPro-Regular";
+$font-weight-normal: 500;
+$font-weight-bold: 600;
+
+.form-container {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: $primary-color;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: $font-weight-normal;
+    margin-bottom: 5px;
+    text-align: left;
+    color: $accent-color;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    font-family: $font-family;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background: $primary-color;
+    color: $secondary-color;
+    transition: border-color 0.2s;
+    box-shadow: none;
+    outline: none;
+    font-family: $font-family;
+
+    &::placeholder {
+        color: $secondary-color;
+        font-family: $font-family;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $font-weight-normal;
+        line-height: normal;
+        padding-left: 10px;
+    }
+
+    &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 5px $primary-color;
+        border: none;
+    }
+}
+
+.image-with-text-placeholder {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    border: none;
+    border-radius: 8px;
+    background: $primary-color;
+    transition: border-color 0.2s;
+    box-shadow: none;
+    outline: none;
+
+    img {
+        margin-right: 10px;
+    }
+
+    span {
+        flex: 1;
+        text-align: left;
+        color: $secondary-color;
+        font-family: $font-family;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $font-weight-normal;
+        line-height: normal;
+        padding-left: 10px;
+    }
+}
+
+.InfoFieldsIcon {
+    height: 17px;
+    width: 17px;
+}

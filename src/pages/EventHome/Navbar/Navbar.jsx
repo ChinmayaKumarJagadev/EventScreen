@@ -1,6 +1,6 @@
 import React from "react";
 import { IMAGES } from "../../../constants/images";
-import './Navbar.css'
+import './Navbar.scss'
 
 const Navbar = () => {
 
@@ -14,7 +14,7 @@ const Navbar = () => {
                 <div class="downloadText">Download elRed</div>
             </div>
 
-            <img src={IMAGES.ShareIcon} alt="no_image_found" className="ml-auto mt-1 pl-3" id="share" width="24px" height="24px" />
+            <img src={IMAGES.ShareIcon} alt="no_image_found" id="share" className="shareIcon" />
 
         </div>
 

@@ -33,7 +33,7 @@
     text-align: right;
     line-height: 0;
     margin-right: 10px;
-    margin-top: 5px;
+    padding: 10px 0px;
     font-family: "Inter";
 }
 
@@ -53,6 +53,8 @@
 .rightImageIcon {
     margin-right: 10px;
     margin-top: 5px;
+    width: 26px;
+    height: 26px;
 }
 
 .dateAndImageContainer {
@@ -62,17 +64,9 @@
 }
 
 .tickIcon {
-    margin: -10px 10px 0 0;
-}
-
-.fixedInput {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background-color: white;
-    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0px 10px 0 0;
+    height: 10px;
+    width: 10px;
 }
 
 .conversationCenter {
@@ -84,19 +78,25 @@
     overflow-y: scroll;
     max-height: calc(100vh - 150px);
     margin-bottom: 40px;
-    padding-bottom: 15px;}
+    padding-bottom: 15px;
+}
 
 .fixedInput {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     padding: 10px;
     border: none;
-    border-top: 1px solid #F7F7F7;;
-    background-color: #F7F7F7;;
+    border-top: 1px solid #F7F7F7;
+    background-color: #F7F7F7;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 46px;
     border: none;
     font-family: "AvenirNextLTPro-Regular";
 }
+
 .InputBar::placeholder {
     font-family: "AvenirNextLTPro-Regular";
 }
@@ -119,14 +119,21 @@
     float: left;
     margin-left: 10px;
 }
-.SmileyIcon{
+
+.SmileyIcon {
     width: 24px;
     height: 24px;
     float: left;
 }
-.SendIcon{
+
+.SendIcon {
     width: 24px;
     height: 24px;
     float: right;
     margin-right: 10px;
+}
+
+.allmessageIcons {
+    width: 26px;
+    height: 26px;
 }

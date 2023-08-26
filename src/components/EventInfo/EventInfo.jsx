@@ -10,14 +10,13 @@ const EventInfo = () => {
             </div>
             <div className="contentBox">
                 <img src={IMAGES.DateIcon} alt="no_image_found" class="icon" />
-                <p className="contentText">Fri 11 Aug 2023 - Sat 12 Aug 2023</p>
+                <div className="contentText">Fri 11 Aug 2023 - Sat 12 Aug 2023</div>
             </div>
-            <div className="contentBox2">
+            <div className="contentBox mt-4">
                 <img src={IMAGES.ClockIcon} alt="no_image_found" className="icon" />
-                <p className="contentText">6:00 PM</p>
+                <div className="contentText">6:00 PM</div>
             </div>
         </div>
-
     )
 }
 export default EventInfo

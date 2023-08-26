@@ -1,6 +1,6 @@
 import React from "react";
 import TopHeader from "../../components/TopHeader/TopHeader";
-import MembersHome from "./members";
+import MembersHome from "./Member/members";
 
 const Members = () => {
     return (

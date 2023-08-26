@@ -10,7 +10,6 @@
     color: #fff;
     padding: 10px;
     border: 1px solid #E72D38;
-    margin: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +34,21 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    box-sizing: border-box;
+    background: #E72D38;
+    color: #fff;
+    border: 1px solid #E72D38;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 100px;
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.buttonOTPContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: calc(100% - 40px);
     box-sizing: border-box;
     background: #E72D38;
@@ -49,7 +63,7 @@
 }
 
 @media (min-width: 768px) {
-    .buttonComponent {
+    .buttonOTPContainer {
         width: calc(100% - 40px);
         max-width: 335px;
     }

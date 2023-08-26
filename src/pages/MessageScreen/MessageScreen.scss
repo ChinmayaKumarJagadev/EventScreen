@@ -1,0 +1,42 @@
+$color-white: #FFF;
+$font-size-small: 14px;
+$font-weight-normal: 400;
+$line-height-132: 132%;
+$letter-spacing-small: -0.266px;
+$gap-small: 10px;
+
+.mainMessage {
+    min-height: 100vh;
+    padding: 0 20px;
+    background-image: url('../../assets/images/EventHome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .messageContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .imageSection {
+        display: flex;
+        margin-top: 20px;
+        gap: $gap-small;
+    }
+
+    .messageTitle {
+        color: $color-white;
+        font-size: $font-size-small;
+        font-style: normal;
+        font-weight: $font-weight-normal;
+        line-height: $line-height-132;
+        letter-spacing: $letter-spacing-small;
+    }
+
+    .messageHeaderIcons {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        display: flex;
+    }
+}

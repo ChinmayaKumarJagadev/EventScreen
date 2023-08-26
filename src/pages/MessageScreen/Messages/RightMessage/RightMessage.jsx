@@ -4,14 +4,14 @@ import { IMAGES } from "../../../../constants/images";
 const RightMessageItem = ({ text, time, icon }) => (
     <div className="d-flex right">
         <div className="ConversationTextContainer">
-            <p className="conversationText">{text}</p>
+            <div className="conversationText">{text}</div>
 
             <div className="dateAndImageContainer">
-                <p className="dateText">{time}</p>
-                <img src={IMAGES.TickIcon} alt="no_image" width="10px" height="10px" className="tickIcon" />
+                <div className="dateText">{time}</div>
+                <img src={IMAGES.TickIcon} alt="no_image" className="tickIcon" />
             </div>
         </div>
-        {icon && <img src={icon} alt="no_image" width="26px" height="26px" className="rightImageIcon" />}
+        {icon && <img src={icon} alt="no_image" className="rightImageIcon" />}
     </div>
 );
 

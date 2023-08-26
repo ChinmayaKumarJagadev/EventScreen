@@ -1,58 +1,62 @@
-  .footerInfo {
-    padding: 0 20px;
-  }
+$primary-color: #000;
+$secondary-color: #8A8A8A;
+$accent-color: #FF2020;
+$font-family: "AvenirNextLTPro-Regular";
+$font-weight-normal: 500;
+$font-weight-bold: 600;
 
-  .icon {
+.footerInfo {
+    padding: 0 20px;
+}
+
+.icon {
     width: 24px;
     height: 24px;
     margin-right: 8px;
-  }
+}
 
-  .contentText {
+.contentText {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: $font-weight-normal;
     line-height: normal;
-    font-family: "AvenirNextLTPro-Regular";
-  }
+    font-family: $font-family;
+}
 
-  .buttonContainer {
+.buttonContainer {
     display: flex;
     gap: 20px;
     justify-content: space-around;
     padding: 0 20px;
-  }
+    margin-bottom: 20px;
+}
 
-  .button {
-    color: #000;
+.button {
+    color: $primary-color;
     text-align: center;
     font-family: 'WorkSans-Regular';
     font-size: 17px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: $font-weight-bold;
     line-height: normal;
     border-radius: 25.5px;
-    border: 1px solid #8A8A8A;
+    border: 1px solid $secondary-color;
     background: #FFF;
     flex-grow: 1;
     padding: 10px 0;
     width: calc(33.333% - 10px);
     cursor: pointer;
-  }
+}
 
-  #yesButton {
-    background-color: #FF2020;
-  }
-
-  .toaster {
+.toaster {
     margin-top: 20px;
     padding: 15px 0 0 0;
     height: 81px;
     flex-shrink: 0;
     background: #FFF;
     box-shadow: 0px -5px 9px 0px rgba(0, 0, 0, 0.15);
-  }
+}
 
-  .CrossIcon {
+.CrossIcon {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
@@ -61,23 +65,27 @@
     margin: 12px 0 0 20px;
     float: left;
     cursor: pointer;
-  }
+}
 
-  .toastertext {
-    color: #000;
+.toastertext {
+    color: $primary-color;
     font-size: 14px;
     font-style: normal;
     line-height: normal;
     margin: 14px 0 0 10px;
     float: left;
-  }
+}
 
-  .changetext {
+.changetext {
     color: #0569FF;
     font-size: 14px;
     font-style: normal;
     line-height: normal;
-    margin: 12px 20px 0 0px;
+    margin: 12px 20px 0 0;
     float: right;
     cursor: pointer;
-  }
+}
+#yesButton {
+    background-color: $accent-color;
+    color: #fff;
+}

@@ -1,28 +1,26 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import './Button.css'
+import './Button.css';
+import { getButtonText, handleButtonClick } from "./buttonFunctions";
 import { routers } from "../../constants/routes";
 
 const ButtonContainer = () => {
     const history = useNavigate();
     const location = useLocation();
-    const buttonText = location.pathname === routers.INFO ? "Reply" : "Send Reply";
-
-    const buttonClicked = () => {
-        history(location.pathname === routers.INFO ? routers.OTP : routers.MESSAGE);
-    }
+    const buttonText = getButtonText(location.pathname);
 
     return (
-        <div>
-            {location.pathname === routers.INFO ? (
-                <button type="submit" className="buttonMain" onClick={buttonClicked}>{buttonText}</button>
-            ) : (
-                <div className="buttonComponent">
-                    <button type="submit" className="otpButtonReply" onClick={buttonClicked}>{buttonText}</button>
-                </div>
-            )}
+        <div className={location.pathname === routers.INFO ? "buttonComponent" : "buttonOTPContainer"}>
+            <button
+                type="submit"
+                className={location.pathname === routers.INFO ? "buttonMain" : "otpButtonReply"}
+                onClick={() => handleButtonClick(location.pathname, history)}
+            >
+                {buttonText}
+            </button>
         </div>
     );
 }
 
 export default ButtonContainer;
+

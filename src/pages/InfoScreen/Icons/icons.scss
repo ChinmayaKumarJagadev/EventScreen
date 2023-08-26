@@ -1,0 +1,56 @@
+// Constants for Fetch Text
+$fetch-text-color: #606060;
+$fetch-text-font: "AvenirNextLTPro-Regular";
+$fetch-text-size: 13px;
+$fetch-text-weight: 500;
+$fetch-text-line-height: 22px;
+
+// Constants for Icon Container
+$icon-container-padding: 0px 25px 25px 10px;
+$icon-container-border: 1px solid rgba(224, 224, 233, 0.57);
+
+// Constants for Title Info
+$title-info-color: #000;
+$title-info-font: "AvenirNextLTPro-Regular";
+$title-info-size: 16px;
+$title-info-weight: 400;
+$title-info-line-height: 27px;
+
+// Constants for All Fav Icons
+$all-fav-icons-size: 38px;
+$all-fav-icons-margin-top: 20px;
+
+.fetchText {
+    color: $fetch-text-color;
+    text-align: center;
+    font-family: $fetch-text-font;
+    font-size: $fetch-text-size;
+    font-style: normal;
+    font-weight: $fetch-text-weight;
+    line-height: $fetch-text-line-height;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $icon-container-padding;
+    border-bottom: $icon-container-border;
+}
+
+.titleInfo {
+    color: $title-info-color;
+    font-family: $title-info-font;
+    font-size: $title-info-size;
+    font-style: normal;
+    font-weight: $title-info-weight;
+    line-height: $title-info-line-height;
+    text-align: left;
+}
+
+.allFavIcons {
+    height: $all-fav-icons-size;
+    width: $all-fav-icons-size;
+    margin-top: $all-fav-icons-margin-top;
+}
+

@@ -1,0 +1,73 @@
+.otpScreen {
+    padding: 0 20px;
+    min-height: 100vh;
+
+    .otp-box {
+        border-radius: 10px;
+        background: #F7F7F7;
+        font-size: 18px;
+        font-weight: bold;
+        width: calc((100% - 80px) / 4);
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+        outline: none;
+        border: none;
+        font-family: "AvenirNextLTPro-Regular";
+    }
+
+    .otp {
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 10px;
+        font-family: "AvenirNextLTPro-Regular";
+        font-weight: bold;
+    }
+
+    .otpTitle {
+        color: #000;
+        font-family: "AvenirNextLTPro-Regular";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .optContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .text-right {
+        text-align: right;
+        margin-top: 20px;
+        margin-bottom: 2px;
+        font-family: "AvenirNextLTPro-Regular";
+    }
+
+    .resendOTP {
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+        font-weight: bold;
+        font-family: "AvenirNextLTPro-Regular";
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+}

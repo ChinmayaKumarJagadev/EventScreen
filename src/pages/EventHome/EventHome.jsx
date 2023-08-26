@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from './Navbar/Navbar'
 import Footer from './Footer/Footer';
 import { IMAGES } from "../../constants/images";
-import './index.css'; 
+import './EventHome.scss'; 
 
 const EventHome = () =>{
     return(

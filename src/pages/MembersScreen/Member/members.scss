@@ -1,0 +1,60 @@
+$font-family: Inter;
+$font-weight-bold: 600;
+
+$color-text: #000;
+$color-accepted: #11992F;
+$color-maybe: #E3A11F;
+
+$font-size-normal: 16px;
+$font-size-small: 11px;
+
+$line-height: 150%;
+$letter-spacing-large: -0.304px;
+$letter-spacing-small: -0.209px;
+
+.membersContainer {
+    margin-bottom: 20px;
+    padding: 0 20px;
+
+    .memberDetails {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 50px);
+
+        .memberName {
+            margin-left: 10px;
+            color: $color-text;
+            font-family: $font-family;
+            font-size: $font-size-normal;
+            font-style: normal;
+            font-weight: $font-weight-bold;
+            line-height: $line-height;
+            letter-spacing: $letter-spacing-large;
+        }
+
+        .AcceptedStatusText,
+        .MaybeStatusText {
+            font-family: $font-family;
+            font-size: $font-size-small;
+            font-style: normal;
+            font-weight: $font-weight-bold;
+            line-height: $line-height;
+            margin-left: auto;
+            letter-spacing: $letter-spacing-small;
+        }
+
+        .AcceptedStatusText {
+            color: $color-accepted;
+        }
+
+        .MaybeStatusText {
+            color: $color-maybe;
+        }
+
+        .memberIcons {
+            width: 46px;
+            height: 46px;
+        }
+    }
+}

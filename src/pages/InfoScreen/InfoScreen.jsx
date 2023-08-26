@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../components/TopHeader/TopHeader";
 import Icons from "./Icons/icons";
 import InfoFields from "./InfoFields/infoFields";
-import './index.css'
+import './InfoScreen.css'
 
 const InfoScreen = () => {
 

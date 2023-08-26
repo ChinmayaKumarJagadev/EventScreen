@@ -1,3 +1,6 @@
+$primary-color: #147BFF;
+$white-color: white;
+
 .navbarContainer {
     position: absolute;
     top: 0;
@@ -6,7 +9,7 @@
     gap: 0;
     margin-top: 20px;
     width: 100%;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .backButton {
@@ -14,7 +17,7 @@
     height: 30px;
     border-radius: 15px;
     margin-right: 20px;
-    border: 1px solid white;
+    border: 1px solid $white-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,10 +32,10 @@
 .downloadContainer {
     display: flex;
     align-items: center;
-    background: #147BFF;
-    padding: 0px 15px;
+    background: $primary-color;
+    padding: 0 15px;
     border-radius: 30px;
-    color: white;
+    color: $white-color;
     margin-left: 32%;
     margin-right: 5px;
     height: 30px;
@@ -52,6 +55,12 @@
 .mlAuto {
     margin-left: auto;
 }
-#share{
+
+#share {
     cursor: pointer;
+}
+
+.shareIcon {
+   width: 24px;
+   height: 24px;
 }
