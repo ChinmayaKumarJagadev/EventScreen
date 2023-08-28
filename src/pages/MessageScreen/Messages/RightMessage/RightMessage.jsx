@@ -8,7 +8,7 @@ const RightMessageItem = ({ text, time, icon }) => (
 
             <div className="dateAndImageContainer">
                 <div className="dateText">{time}</div>
-                <img src={IMAGES.TickIcon} alt="no_image" className="tickIcon" />
+                <img src={IMAGES?.TickIcon} alt="no_image" className="tickIcon" />
             </div>
         </div>
         {icon && <img src={icon} alt="no_image" className="rightImageIcon" />}

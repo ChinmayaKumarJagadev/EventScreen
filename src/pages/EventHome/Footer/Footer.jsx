@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IMAGES } from "../../../constants/images";
 import { useNavigate } from "react-router-dom";
-import { handleToaster, yesClicked } from "./FooterFunction";
+import { handleToaster, eventInfoScreen } from "./FooterFunction";
 import './Footer.scss';
 import EventInfo from "../../../components/EventInfo/EventInfo";
 
@@ -17,14 +17,14 @@ const Footer = () => {
 
             {showToaster ? (
                 <div className="toaster">
-                    <img src={IMAGES.CrossIcon} alt="no_image_found" className="CrossIcon" onClick={() => handleToaster(setShowToaster, false)} />
+                    <img src={IMAGES?.CrossIcon} alt="no_image_found" className="CrossIcon" onClick={() => handleToaster(setShowToaster, false)} />
                     <div className="toastertext"><b>You have responded No</b></div>
                     <div className="changetext" onClick={() => handleToaster(setShowToaster, false)} ><b>Change</b></div>
                 </div>
             ) : (<div className="buttonContainer mt-4">
                 <div className="button"><b>Maybe</b></div>
                 <div className="button" onClick={() => handleToaster(setShowToaster, true)}><b>No</b></div>
-                <div className="button" onClick={() => yesClicked(history)} id="yesButton"><b>Yes</b></div>
+                <div className="button" onClick={() => eventInfoScreen(history)} id="yesButton"><b>Yes</b></div>
             </div>)}
         </div>
     );

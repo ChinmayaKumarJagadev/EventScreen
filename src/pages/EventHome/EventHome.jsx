@@ -7,7 +7,7 @@ import './EventHome.scss';
 const EventHome = () =>{
     return(
         <div className="event-home-container">
-            <img src={IMAGES.EventHomeImage} alt="no_image" className="background-image" />
+            <img src={IMAGES?.EventHomeImage} alt="no_image" className="background-image" />
             <Navbar className="overlay" />
             <Footer className="overlay" />
         </div>

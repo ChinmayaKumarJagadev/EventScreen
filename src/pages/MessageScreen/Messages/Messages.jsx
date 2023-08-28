@@ -10,7 +10,7 @@ const Messages = () => {
     return (
         <div className="conversationCenter">
             <div className="messagesContainer">
-                {messages.map((message, index) => (
+                {messages?.map((message, index) => (
                     index % 4 < 2 ? (
                         <MessageItem key={index} text={message?.text} time={message?.time} icon={message?.icon} />
                     ) : (
@@ -19,9 +19,9 @@ const Messages = () => {
                 ))}
             </div>
             <div className="fixedInput">
-                <img src={IMAGES.EmojiIcon} alt="no_images" className="SmileyIcon" />
+                <img src={IMAGES?.EmojiIcon} alt="no_images" className="SmileyIcon" />
                 <input type='text' className="InputBar" placeholder="Type here..." />
-                <img src={IMAGES.SendIcon} alt="no_images" className="SendIcon" />
+                <img src={IMAGES?.SendIcon} alt="no_images" className="SendIcon" />
             </div>
         </div>
     );

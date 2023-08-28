@@ -7,14 +7,14 @@ const Navbar = () => {
     return (
         <div className="navbarContainer">
             <div class="backButton">
-                <img src={IMAGES.BackArrow} alt="no_image_found" class="backArrowHome" />
+                <img src={IMAGES?.BackArrow} alt="no_image_found" class="backArrowHome" />
             </div>
             <div class="downloadContainer">
-                <img src={IMAGES.DownloadIcon} alt="no_image_found" />
+                <img src={IMAGES?.DownloadIcon} alt="no_image_found" />
                 <div class="downloadText">Download elRed</div>
             </div>
 
-            <img src={IMAGES.ShareIcon} alt="no_image_found" id="share" className="shareIcon" />
+            <img src={IMAGES?.ShareIcon} alt="no_image_found" id="share" className="shareIcon" />
 
         </div>
 

@@ -7,14 +7,14 @@ import { routers } from "../../constants/routes";
 const ButtonContainer = () => {
     const history = useNavigate();
     const location = useLocation();
-    const buttonText = getButtonText(location.pathname);
+    const buttonText = getButtonText(location?.pathname);
 
     return (
-        <div className={location.pathname === routers.INFO ? "buttonComponent" : "buttonOTPContainer"}>
+        <div className={location?.pathname === routers?.INFO ? "buttonComponent" : "buttonOTPContainer"}>
             <button
                 type="submit"
-                className={location.pathname === routers.INFO ? "buttonMain" : "otpButtonReply"}
-                onClick={() => handleButtonClick(location.pathname, history)}
+                className={location?.pathname === routers?.INFO ? "buttonMain" : "otpButtonReply"}
+                onClick={() => handleButtonClick(location?.pathname, history)}
             >
                 {buttonText}
             </button>

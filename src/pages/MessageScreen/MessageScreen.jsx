@@ -16,8 +16,8 @@ const MessagesHome = () => {
                 <TopHeader />
 
                 <div className="imageSection">
-                    <img src={IMAGES.MemberIcon} alt="no_image_found" className="messageHeaderIcons" onClick={() => navigateTo(history, routers.MEMBER)}/>
-                    <img src={IMAGES.InfoIcon} alt="no_image_found" className="messageHeaderIcons" onClick={() => navigateTo(history, routers.MEMBERINFO)}/>
+                    <img src={IMAGES?.MemberIcon} alt="no_image_found" className="messageHeaderIcons" onClick={() => navigateTo(history, routers?.MEMBER)}/>
+                    <img src={IMAGES?.InfoIcon} alt="no_image_found" className="messageHeaderIcons" onClick={() => navigateTo(history, routers?.MEMBERINFO)}/>
                 </div>
             </div>
 

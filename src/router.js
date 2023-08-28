@@ -10,14 +10,13 @@ import MemberInfoScreen from './pages/MembersInfo/MembersInfo'
 const RouterCompoent = () => {
   return (
     <Router>
-
       <Routes>
-        <Route path={routers.HOME} element={<EventHome />} />
-        <Route path={routers.INFO} element={<InfoScreen />} />
-        <Route path={routers.OTP} element={<OTPScreen />} />
-        <Route path={routers.MESSAGE} element={<MessageScreen />} />
-        <Route path={routers.MEMBER} element={<MemberScreen />} />
-        <Route path={routers.MEMBERINFO} element={<MemberInfoScreen />} />
+        <Route path={routers?.HOME} element={<EventHome />} />
+        <Route path={routers?.INFO} element={<InfoScreen />} />
+        <Route path={routers?.OTP} element={<OTPScreen />} />
+        <Route path={routers?.MESSAGE} element={<MessageScreen />} />
+        <Route path={routers?.MEMBER} element={<MemberScreen />} />
+        <Route path={routers?.MEMBERINFO} element={<MemberInfoScreen />} />
       </Routes>
     </Router>
   );

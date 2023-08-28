@@ -4,6 +4,6 @@ export function handleToaster(setShowToaster, shouldOpen) {
     setShowToaster(shouldOpen);
 }
 
-export function yesClicked(history) {
+export function eventInfoScreen(history) {
     history(routers.INFO);
 }
