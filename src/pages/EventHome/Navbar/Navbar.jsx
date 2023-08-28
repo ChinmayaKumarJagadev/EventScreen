@@ -6,12 +6,12 @@ const Navbar = () => {
 
     return (
         <div className="navbarContainer">
-            <div class="backButton">
-                <img src={IMAGES?.BackArrow} alt="no_image_found" class="backArrowHome" />
+            <div className="backButton">
+                <img src={IMAGES?.BackArrow} alt="no_image_found" className="backArrowHome" />
             </div>
-            <div class="downloadContainer">
+            <div className="downloadContainer">
                 <img src={IMAGES?.DownloadIcon} alt="no_image_found" />
-                <div class="downloadText">Download elRed</div>
+                <div className="downloadText">Download elRed</div>
             </div>
 
             <img src={IMAGES?.ShareIcon} alt="no_image_found" id="share" className="shareIcon" />
