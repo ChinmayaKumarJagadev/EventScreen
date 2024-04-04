@@ -26,7 +26,7 @@ const OTPScreen = () => {
             <div className="mainOTP">
                 <div className="otp">OTP</div>
                 <div className="optContainer">
-                    {otpDigits.map((digit, index) => (
+                    {otpDigits?.map((digit, index) => (
                         <input key={index} className="otp-box" type="number" maxLength="1" value={digit} ref={inputRefs[index]} onChange={(e) => handleChange(index, e.target.value)} />
                     ))}
                 </div>

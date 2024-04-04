@@ -28,6 +28,8 @@ import NilimaIcon from '../assets/images/nilima.png';
 import SanjayIcon from '../assets/images/sanjay.png';
 import TristaIcon from '../assets/images/trista.png';
 import MapIcon from '../assets/images/mapIcon.png';
+import MaleIcon from '../assets/images/male.png';
+import Location from '../assets/images/location.png'
 
 export const IMAGES = {
     BackArrow, DownloadIcon, ShareIcon, DateIcon, ClockIcon,
@@ -35,5 +37,5 @@ export const IMAGES = {
     InstaIcon, TwitterIcon, GoogleIcon, LinkedinIcon, MemberIcon,
     InfoIcon, MessageBackIcon, MessageIcon1, MessageIcon2,
     MessageIcon3, TickIcon, EmojiIcon, SendIcon, SouravIcon, BrahminiIcon, AmitIcon, RajeshIcon,
-    NilimaIcon, SanjayIcon, TristaIcon, MapIcon
+    NilimaIcon, SanjayIcon, TristaIcon, MapIcon, MaleIcon, Location
 };

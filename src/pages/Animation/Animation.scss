@@ -1,0 +1,106 @@
+.animation-container {
+    position: relative;
+    overflow: hidden;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+
+    .left-container,
+    .right-container {
+        position: absolute;
+        top: 10%;
+        bottom: 65%;
+        width: 30%;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .left-container {
+        left: 0;
+    }
+
+    .right-container {
+        right: 0;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: min-height 0.5s ease-in-out;
+    }
+
+    .content-center {
+        width: 30%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+
+
+    .progress-bars-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        padding: 20px 20px;
+    }
+
+    .pause {
+        position: absolute;
+        top: 29px;
+        left: 37%;
+        width: 30%;
+        height: 50vh;
+        background-color: transparent;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .nobgline {
+        margin: 10px 13px 26px 13px;
+        max-width: 92%;
+    }
+
+    .content-container {
+        position: relative;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: min-height 5s ease-in-out;
+        top: -10px;
+        animation: zoom-in 5s linear infinite;
+
+        @keyframes zoom-in {
+            from {
+                background-size: 100% 100%;
+            }
+
+            to {
+                background-size: 150% 150%;
+            }
+        }
+    }
+}
+
+.animation-button {
+    padding: 8px 16px;
+    margin: 0 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

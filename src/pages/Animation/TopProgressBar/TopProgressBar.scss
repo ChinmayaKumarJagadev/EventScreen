@@ -1,0 +1,14 @@
+// TopProgressBar.scss
+.main {
+    padding-top: 15px;
+}
+
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

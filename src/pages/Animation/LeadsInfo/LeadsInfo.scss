@@ -1,0 +1,95 @@
+.leadsContainer {
+    margin-top: 10px;
+    padding: 20px 20px;
+    background-color: none;
+    margin-bottom: 100px;
+
+    &::-webkit-scrollbar {
+        display: none;
+     }
+}
+
+.titleLead {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 30px;
+    text-align: left;
+}
+
+.descriptionLead {
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.locationLead {
+    display: flex;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.leadslocationtext {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.leadscategory {
+    color: #fff;
+    font-size: 18px;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    width: fit-content;
+}
+
+.leadslocationicon {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+.priceLeads {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.leadbuttoncontainer {
+    position: relative;
+
+    .leadsbutton {
+        position: fixed;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        background: #E72D38;
+        color: #fff;
+        border: 1px solid #E72D38;
+        font-size: 20px;
+        line-height: normal;
+        border-radius: 100px;
+        position: fixed;
+        bottom: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .leadbuttoncontainer {
+        position: relative;
+
+        .leadsbutton {
+            width: calc(100% - 40px);
+            max-width: 335px;
+        }
+    }
+}

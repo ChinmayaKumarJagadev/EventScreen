@@ -5,13 +5,16 @@ import InfoScreen from './pages/InfoScreen/InfoScreen'
 import OTPScreen from './pages/OTPScreen/OTPScreen';
 import MessageScreen from './pages/MessageScreen/MessageScreen';
 import MemberScreen from './pages/MembersScreen/MembersScreen';
-import MemberInfoScreen from './pages/MembersInfo/MembersInfo'
+import MemberInfoScreen from './pages/MembersInfo/MembersInfo';
+import Animation from './pages/Animation/Animation';
+import Progress from './pages/newComp'
 
 const RouterCompoent = () => {
   return (
     <Router>
       <Routes>
         <Route path={routers?.HOME} element={<EventHome />} />
+         {/* <Route path={routers?.HOME} element={<Animation />} /> */}
         <Route path={routers?.INFO} element={<InfoScreen />} />
         <Route path={routers?.OTP} element={<OTPScreen />} />
         <Route path={routers?.MESSAGE} element={<MessageScreen />} />
